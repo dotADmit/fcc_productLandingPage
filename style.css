@@ -1,0 +1,10 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+    width: 300px;
+}
+iframe {
+    max-width: 560px;
+    width: 100%;
+}
