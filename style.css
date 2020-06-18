@@ -33,15 +33,14 @@ input {
     padding: 5px;
     margin-bottom: 15px;
 }
-.uppercase {
-    text-transform: uppercase;
-}
+
 button {
     width: 150px;
     font-weight: bold;
     background-color: #f1c40f;
     font-size: 16px;
     padding: 5px 0;
+    text-transform: uppercase;
 }
 button:hover {
     background-color: orange;
@@ -75,9 +74,56 @@ button:hover {
 .features li:nth-child(3)::before {
     background-position: 0 -270px;
 }
-
+.video {
+    text-align: center;
+    margin-top: 50px;
+}
 
 iframe {
     max-width: 560px;
     width: 100%;
+}
+.products {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.products ul {
+    list-style: none;
+    padding: 0;
+}
+.product {
+    width: calc(100%/3);
+    border: 1px solid black;
+}
+.product .name {
+    text-transform: uppercase;
+    padding: 10px 0;
+    background-color: #dddddd;
+    font-weight: bold;
+}
+.product button {
+    width: 100px;
+    margin: 10px 0;
+}
+footer {
+    background-color: #dddddd;
+    margin-top: 30px;
+    padding: 20px;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    margin: 0;
+}
+footer ul li {
+    padding: 0 10px;
+}
+footer span {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+    color: #444444;
 }
