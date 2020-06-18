@@ -1,9 +1,82 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eeeeee;
+    line-height: 1.5;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    min-height: 75px;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 35vw;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.logo, nav {
+    align-self: center;
 }
 img {
     width: 300px;
 }
+.subs {
+    text-align: center;
+    height: 200px;
+}
+input {
+    width: 250px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+button {
+    width: 150px;
+    font-weight: bold;
+    background-color: #f1c40f;
+    font-size: 16px;
+    padding: 5px 0;
+}
+button:hover {
+    background-color: orange;
+    transition: 1s;
+}
+.features ul {
+    list-style: none;
+}
+.features h2,
+.features p {
+    margin: 0;
+}
+.features li {
+    height: 120px;
+    position: relative;
+    padding-left: 100px;
+}
+.features li::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    background: url("img/sprite.png") no-repeat;
+    background-size: 75%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.features li:nth-child(2)::before {
+    background-position: 0 -140px;
+}
+.features li:nth-child(3)::before {
+    background-position: 0 -270px;
+}
+
+
 iframe {
     max-width: 560px;
     width: 100%;
