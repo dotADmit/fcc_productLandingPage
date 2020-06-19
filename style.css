@@ -117,6 +117,7 @@ input[type="submit"] {
     text-transform: uppercase;
 }
 
+input[type="submit"]:hover,
 button:hover {
     background-color: orange;
     transition: 1s;
